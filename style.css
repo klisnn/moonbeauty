@@ -118,7 +118,7 @@ a {
             rgba(255, 247, 244, 0.80) 45%,
             rgba(255, 247, 244, 0.15) 100%
         ),
-        url("images/hero.jpg") center / cover;
+        url("images/makiyazh-1.jpeg") center / cover;
 }
 
 .hero-content {

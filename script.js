@@ -10,7 +10,7 @@ if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
 
     if (themeToggle) {
-        themeToggle.textContent = "☀️";
+        themeToggle.textContent = "";
     }
 }
 
@@ -27,7 +27,7 @@ if (themeToggle) {
                 "dark"
             );
 
-            themeToggle.textContent = "☀️";
+            themeToggle.textContent = "";
 
         } else {
 
@@ -36,7 +36,7 @@ if (themeToggle) {
                 "light"
             );
 
-            themeToggle.textContent = "🌙";
+            themeToggle.textContent = "";
         }
 
     });

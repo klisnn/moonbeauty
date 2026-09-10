@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Contact | MoonBeauty</title>
+
+    <meta
+        name="description"
+        content="Contact MoonBeauty for questions, recommendations and beauty support."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            MoonBeauty
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="catalog.html">Shop</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <button
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+        >
+            🌙
+        </button>
+
+    </nav>
+
+
+    <!-- Header -->
+
+    <header class="page-header">
+
+        <p class="hero-small">
+            GET IN TOUCH
+        </p>
+
+        <h1>
+            Contact Us
+        </h1>
+
+        <p>
+            Have a question? We'd love to hear from you.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <section class="contact-section">
+
+            <div class="contact-info">
+
+                <p class="section-label">
+                    LET'S TALK
+                </p>
+
+                <h2>
+                    We'd Love to Hear From You
+                </h2>
+
+                <p>
+                    Whether you need help choosing a product,
+                    have a question about our collection,
+                    or simply want to say hello,
+                    send us a message.
+                </p>
+
+                <div class="contact-details">
+
+                    <div>
+                        <span>📧</span>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@moonbeauty.com</p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <span>📞</span>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+7 700 000 0000</p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <span>📍</span>
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>Almaty, Kazakhstan</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <form
+                id="contactForm"
+                class="contact-form"
+                novalidate
+            >
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <small
+                        id="nameError"
+                        class="form-error"
+                    ></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <small
+                        id="emailError"
+                        class="form-error"
+                    ></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                    <small
+                        id="messageError"
+                        class="form-error"
+                    ></small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Send Message
+                </button>
+
+                <p
+                    id="formSuccess"
+                    class="form-success"
+                ></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-logo">
+            MoonBeauty
+        </div>
+
+        <p>
+            Beauty that feels like you.
+        </p>
+
+        <p class="copyright">
+            © 2026 MoonBeauty. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

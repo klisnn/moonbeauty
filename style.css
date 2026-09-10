@@ -1,0 +1,577 @@
+/* =========================
+   MOONBEAUTY
+   MAIN STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fffaf8;
+    color: #2f2928;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 6%;
+
+    background: rgba(255, 250, 248, 0.95);
+
+    border-bottom: 1px solid #eadbd5;
+
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #8d5b55;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #594a47;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b87970;
+}
+
+#themeToggle {
+    border: none;
+
+    background: #f1dfda;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 247, 244, 0.96) 0%,
+            rgba(255, 247, 244, 0.80) 45%,
+            rgba(255, 247, 244, 0.15) 100%
+        ),
+        url("images/hero.jpg") center / cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-small,
+.section-label {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    color: #a36b64;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1.05;
+
+    font-weight: normal;
+
+    color: #392d2a;
+
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    max-width: 500px;
+
+    color: #665956;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    background: #9d625b;
+
+    color: white;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #7f4c46;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(125, 76, 70, 0.25);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 90px 30px;
+}
+
+section {
+    margin-bottom: 110px;
+}
+
+section h2 {
+    font-size: 45px;
+
+    font-weight: normal;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.category-card {
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(86, 60, 54, 0.08);
+
+    transition: 0.4s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(86, 60, 54, 0.15);
+}
+
+.category-image {
+    height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 90px;
+}
+
+.makeup-image {
+    background: #f3d8d4;
+}
+
+.skincare-image {
+    background: #e5ded0;
+}
+
+.haircare-image {
+    background: #ead5c8;
+}
+
+.category-content {
+    padding: 25px;
+}
+
+.category-content h3 {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.category-content p {
+    font-family: Arial, sans-serif;
+
+    color: #806f6a;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.why-us {
+    text-align: center;
+
+    background: #f6ebe7;
+
+    padding: 70px 40px;
+
+    border-radius: 25px;
+}
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 50px;
+}
+
+.feature span {
+    display: block;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-family: Arial, sans-serif;
+
+    color: #766662;
+
+    max-width: 280px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    text-align: center;
+
+    padding: 80px 30px;
+
+    background: #ead5d0;
+
+    border-radius: 25px;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-family: Arial, sans-serif;
+
+    margin-bottom: 30px;
+
+    color: #66534f;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: #352927;
+
+    color: white;
+}
+
+.footer-logo {
+    font-size: 30px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    color: #d8c6c1;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background: #201b1a;
+
+    color: #f5e9e5;
+}
+
+body.dark-mode .navbar {
+    background: rgba(32, 27, 26, 0.95);
+
+    border-color: #463a37;
+}
+
+body.dark-mode .nav-links a {
+    color: #eadbd6;
+}
+
+body.dark-mode .logo {
+    color: #d89c91;
+}
+
+body.dark-mode #themeToggle {
+    background: #493b38;
+}
+
+body.dark-mode .hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(32, 27, 26, 0.96),
+            rgba(32, 27, 26, 0.65)
+        ),
+        url("images/hero.jpg") center / cover;
+}
+
+body.dark-mode .hero h1 {
+    color: #fff5f1;
+}
+
+body.dark-mode .hero-text {
+    color: #d8c8c4;
+}
+
+body.dark-mode .category-card {
+    background: #302725;
+}
+
+body.dark-mode .category-content p {
+    color: #c8b7b2;
+}
+
+body.dark-mode .why-us {
+    background: #302624;
+}
+
+body.dark-mode .feature p {
+    color: #c8b7b2;
+}
+
+body.dark-mode .cta {
+    background: #493532;
+}
+
+body.dark-mode .cta p {
+    color: #d7c3bd;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .category-grid,
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 18px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+
+        padding: 60px 25px;
+
+        background:
+            linear-gradient(
+                rgba(255, 247, 244, 0.88),
+                rgba(255, 247, 244, 0.88)
+            ),
+            url("images/hero.jpg") center / cover;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 60px 18px;
+    }
+
+    section {
+        margin-bottom: 70px;
+    }
+
+    section h2 {
+        font-size: 35px;
+    }
+
+    .category-grid,
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .category-image {
+        height: 250px;
+    }
+
+    .why-us,
+    .cta {
+        padding: 50px 20px;
+    }
+}

@@ -796,3 +796,270 @@ body.dark-mode .service-icon {
     }
 
 }
+/* =========================
+   SHOP
+========================= */
+
+.shop-section {
+    text-align: center;
+}
+
+.shop-controls {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+.search-box,
+.filter-box {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    gap: 7px;
+}
+
+.search-box label,
+.filter-box label {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #6d5a56;
+}
+
+.search-box input,
+.filter-box select {
+    width: 280px;
+
+    padding: 14px 16px;
+
+    border: 1px solid #decfca;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #302725;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   PRODUCT CARDS
+========================= */
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+
+    text-align: left;
+}
+
+.product-card {
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(86, 60, 54, 0.08);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 45px rgba(86, 60, 54, 0.15);
+}
+
+.product-image {
+    height: 280px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 90px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f6ded9,
+            #ead3ca
+        );
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-category {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #a36b64;
+
+    margin-bottom: 8px;
+}
+
+.product-info h3 {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.product-info > p:not(.product-category) {
+    font-family: Arial, sans-serif;
+
+    color: #766662;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.product-info strong {
+    display: block;
+
+    color: #9d625b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+.view-product {
+    border: none;
+
+    background: #9d625b;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.view-product:hover {
+    background: #7f4c46;
+
+    transform: translateY(-2px);
+}
+
+.no-products {
+    display: none;
+
+    margin-top: 30px;
+
+    font-family: Arial, sans-serif;
+
+    color: #9d625b;
+}
+
+
+/* =========================
+   SHOP DARK MODE
+========================= */
+
+body.dark-mode .search-box label,
+body.dark-mode .filter-box label {
+    color: #d4c3be;
+}
+
+body.dark-mode .search-box input,
+body.dark-mode .filter-box select {
+    background: #302725;
+
+    color: white;
+
+    border-color: #594945;
+}
+
+body.dark-mode .product-card {
+    background: #302725;
+}
+
+body.dark-mode .product-info > p:not(.product-category) {
+    color: #c8b7b2;
+}
+
+body.dark-mode .product-image {
+    background:
+        linear-gradient(
+            135deg,
+            #493532,
+            #3b2d2a
+        );
+}
+
+
+/* =========================
+   SHOP RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .products-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box input,
+    .filter-box select {
+        width: 100%;
+    }
+
+    .shop-controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+}

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shop | MoonBeauty</title>
+
+    <meta
+        name="description"
+        content="Shop makeup, skincare and haircare products at MoonBeauty."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            MoonBeauty
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="catalog.html">Shop</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <button
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+        >
+            🌙
+        </button>
+
+    </nav>
+
+
+    <!-- Header -->
+
+    <header class="page-header">
+
+        <p class="hero-small">
+            MOONBEAUTY COLLECTION
+        </p>
+
+        <h1>
+            Beauty Shop
+        </h1>
+
+        <p>
+            Discover products made for your
+            everyday beauty routine.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- Search and Filter -->
+
+        <section class="shop-section">
+
+            <p class="section-label">
+                FIND YOUR FAVORITES
+            </p>
+
+            <h2>
+                Our Products
+            </h2>
+
+            <div class="shop-controls">
+
+                <div class="search-box">
+
+                    <label for="searchInput">
+                        Search products
+                    </label>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search..."
+                    >
+
+                </div>
+
+
+                <div class="filter-box">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Products
+                        </option>
+
+                        <option value="makeup">
+                            Makeup
+                        </option>
+
+                        <option value="skincare">
+                            Skincare
+                        </option>
+
+                        <option value="haircare">
+                            Haircare
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Products -->
+
+            <div
+                id="productsContainer"
+                class="products-grid"
+            >
+
+                <!-- Product 1 -->
+
+                <article
+                    class="product-card"
+                    data-category="makeup"
+                    data-name="Rose Lipstick"
+                >
+
+                    <div class="product-image">
+                        💄
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Makeup
+                        </p>
+
+                        <h3>
+                            Rose Lipstick
+                        </h3>
+
+                        <p>
+                            A soft rose shade for an
+                            elegant everyday look.
+                        </p>
+
+                        <strong>
+                            $24
+                        </strong>
+
+                        <button
+                            class="view-product"
+                            type="button"
+                        >
+                            View Product
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+
+                <article
+                    class="product-card"
+                    data-category="makeup"
+                    data-name="Glow Foundation"
+                >
+
+                    <div class="product-image">
+                        ✨
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Makeup
+                        </p>
+
+                        <h3>
+                            Glow Foundation
+                        </h3>
+
+                        <p>
+                            Lightweight foundation with
+                            a natural radiant finish.
+                        </p>
+
+                        <strong>
+                            $35
+                        </strong>
+
+                        <button
+                            class="view-product"
+                            type="button"
+                        >
+                            View Product
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+
+                <article
+                    class="product-card"
+                    data-category="skincare"
+                    data-name="Hydrating Serum"
+                >
+
+                    <div class="product-image">
+                        🌿
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Skincare
+                        </p>
+
+                        <h3>
+                            Hydrating Serum
+                        </h3>
+
+                        <p>
+                            A refreshing serum designed
+                            for soft and hydrated skin.
+                        </p>
+
+                        <strong>
+                            $42
+                        </strong>
+
+                        <button
+                            class="view-product"
+                            type="button"
+                        >
+                            View Product
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+
+                <article
+                    class="product-card"
+                    data-category="skincare"
+                    data-name="Rose Face Cream"
+                >
+
+                    <div class="product-image">
+                        🌹
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Skincare
+                        </p>
+
+                        <h3>
+                            Rose Face Cream
+                        </h3>
+
+                        <p>
+                            A gentle daily cream for
+                            a smooth and fresh feeling.
+                        </p>
+
+                        <strong>
+                            $30
+                        </strong>
+
+                        <button
+                            class="view-product"
+                            type="button"
+                        >
+                            View Product
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 5 -->
+
+                <article
+                    class="product-card"
+                    data-category="haircare"
+                    data-name="Silk Hair Oil"
+                >
+
+                    <div class="product-image">
+                        🌸
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Haircare
+                        </p>
+
+                        <h3>
+                            Silk Hair Oil
+                        </h3>
+
+                        <p>
+                            Lightweight hair oil for
+                            smooth and shiny-looking hair.
+                        </p>
+
+                        <strong>
+                            $28
+                        </strong>
+
+                        <button
+                            class="view-product"
+                            type="button"
+                        >
+                            View Product
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+
+                <article
+                    class="product-card"
+                    data-category="haircare"
+                    data-name="Repair Hair Mask"
+                >
+
+                    <div class="product-image">
+                        🧴
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Haircare
+                        </p>
+
+                        <h3>
+                            Repair Hair Mask
+                        </h3>
+
+                        <p>
+                            A nourishing mask for
+                            soft and healthy-looking hair.
+                        </p>
+
+                        <strong>
+                            $32
+                        </strong>
+
+                        <button
+                            class="view-product"
+                            type="button"
+                        >
+                            View Product
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p
+                id="noProducts"
+                class="no-products"
+            >
+                No products found.
+            </p>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <h2>
+                Need Help Choosing?
+            </h2>
+
+            <p>
+                Contact us and we'll help you
+                find something you'll love.
+            </p>
+
+            <a
+                href="contact.html"
+                class="btn"
+            >
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Product Modal -->
+
+    <div
+        id="productModal"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                id="closeModal"
+                class="close-modal"
+                type="button"
+                aria-label="Close product window"
+            >
+                &times;
+            </button>
+
+            <p class="section-label">
+                MOONBEAUTY
+            </p>
+
+            <h2 id="modalTitle">
+                Product
+            </h2>
+
+            <p id="modalDescription">
+            </p>
+
+            <strong id="modalPrice">
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            MoonBeauty
+        </div>
+
+        <p>
+            Beauty that feels like you.
+        </p>
+
+        <p class="copyright">
+            © 2026 MoonBeauty. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
